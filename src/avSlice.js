@@ -14,7 +14,13 @@ export const avSlice = createSlice({
     name: "Speaker",
     cost: 35,
     quantity: 0,
-    }
+    },
+    {
+        img: "https://pixabay.com/images/download/public-speaking-3926344_640.jpg",
+        name: "Microphones",
+        cost: 45,
+        quantity: 0,
+    },
   ],
 
 
