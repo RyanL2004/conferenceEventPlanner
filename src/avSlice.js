@@ -21,6 +21,12 @@ export const avSlice = createSlice({
         cost: 45,
         quantity: 0,
     },
+    {
+        img: "https://pixabay.com/images/download/whiteboard-2903269_640.png",
+        name: "Whiteboards",
+        cost: 80,
+        quantity: 0,
+    },
   ],
 
 
