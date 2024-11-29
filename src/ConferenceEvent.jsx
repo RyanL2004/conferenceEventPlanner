@@ -16,6 +16,8 @@ const ConferenceEvent = () => {
     const avTotalCost = calculateTotalCost("av")
     const mealsItems = useSelector((state) => state.meals )
     const mealsTotalCost = calculateTotalCost("meal");
+   
+
 
     const handleToggleItems = () => {
         console.log("handleToggleItems called");
@@ -147,7 +149,13 @@ const ConferenceEvent = () => {
           }
         }
       }
-
+    
+      const totalCosts = {
+        venue: venueTotalCost,
+        av: avTotalCost,
+        meals: mealsTotalCost,
+    }
+    
     return (
         <>
             <navbar className="navbar_event_conference">
@@ -308,9 +316,5 @@ const ConferenceEvent = () => {
 
     );
 };
-const totalCosts = {
-    venue: venueTotalCost,
-    av: avTotalCost,
-    meals: mealsTotalCost,
-}
+
 export default ConferenceEvent;
